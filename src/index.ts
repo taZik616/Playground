@@ -1,16 +1,8 @@
-console.log(null == 0)
+import express from "express";
 
-const someFunc = () => {
-  return 'haha'
-}
+const port = process.env.PORT || 3000;
+const app = express();
 
-console.log(someFunc())
-
-// import express from 'express'
-
-// const port = process.env.PORT || 3000
-// const app = express()
-
-// app.listen(port, () => {
-//   console.log(`port:${port}`)
-// })
+app.listen(port, () => {
+  console.log(`port:${port}`);
+});
